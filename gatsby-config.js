@@ -3,12 +3,13 @@ module.exports = {
     title: "Product Feedback",
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "",
+        trackingId: "UA-162346244-1",
       },
     },
     "gatsby-plugin-react-helmet",
