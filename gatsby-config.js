@@ -3,6 +3,7 @@ module.exports = {
     title: "Product Feedback",
   },
   plugins: [
+    // "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
@@ -13,7 +14,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -37,6 +37,27 @@ module.exports = {
         path: "./content/changelog",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+          // {
+          //   resolve: `gatsby-remark-responsive-iframe`,
+          //   options: {
+          //     wrapperStyle: `margin-bottom: 1.0725rem`,
+          //   },
+          // },
+          // `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          // `gatsby-remark-smartypants`,
+        ],
+      },
+    },
   ],
 };
