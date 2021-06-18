@@ -11,7 +11,7 @@ export default function Changelog({ data }) {
             {changelogs.map(changelog => (
                 <article key={changelog.id}>
                     <h2>{changelog.frontmatter.title}</h2>
-                    <small>{changelog.frontmatter.author}, {changelog.frontmatter.date}</small>
+                    <small>{changelog.frontmatter.date}</small>
                     <p>{changelog.excerpt}</p>
                 </article>
             ))}
@@ -24,7 +24,7 @@ export const pageQuery = graphql`
     changelog: allMarkdownRemark {
       changelogs: nodes {
         frontmatter {
-          date(fromNow: true)
+          date(formatString: "MMMM DD, YYYY")
           title
         }
         excerpt
