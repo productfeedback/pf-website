@@ -30,5 +30,13 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "changelog",
+        path: "./content/changelog",
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 };
