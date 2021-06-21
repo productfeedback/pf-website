@@ -10,7 +10,7 @@ export default function Changelog({ data }) {
       <div className="relative py-16 bg-white">
         {changelogs.map(changelog => (
 
-          <div className="relative px-4 sm:px-6 lg:px-8 m-20">
+          <div className="relative px-4 sm:px-6 lg:px-8 mx-20 mt-10 mb-32">
             <div className="text-lg max-w-prose mx-auto">
               <h1>
                 <span className="block text-base text-blue-600 font-semibold tracking-wide uppercase">
@@ -20,7 +20,7 @@ export default function Changelog({ data }) {
                   {changelog.frontmatter.title}
                 </span>
               </h1>
-              <div className="mt-6 prose prose-indigo prose-lg mx-auto">
+              <div className="mt-8 mx-auto">
                 <section
                   className="prose"
                   dangerouslySetInnerHTML={{ __html: changelog.html }}

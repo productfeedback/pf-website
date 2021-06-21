@@ -37,6 +37,13 @@ module.exports = {
         path: "./content/changelog",
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`castoro`, `raleway\:300,400i,500,600`],
+    //     display: "swap",
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

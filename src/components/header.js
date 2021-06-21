@@ -74,7 +74,7 @@ export default function Example() {
                                 <Popover className="relative">
                                     {({ open }) => (
                                         <>
-                                            <Popover.Button
+                                            {/* <Popover.Button
                                                 className={classNames(
                                                     open ? 'text-gray-900' : 'text-gray-500',
                                                     'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
@@ -88,7 +88,7 @@ export default function Example() {
                                                     )}
                                                     aria-hidden="true"
                                                 />
-                                            </Popover.Button>
+                                            </Popover.Button> */}
 
                                             <Transition
                                                 show={open}
@@ -100,7 +100,7 @@ export default function Example() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel
+                                                {/* <Popover.Panel
                                                     static
                                                     className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0"
                                                 >
@@ -121,7 +121,7 @@ export default function Example() {
                                                             ))}
                                                         </div>
                                                     </div>
-                                                </Popover.Panel>
+                                                </Popover.Panel> */}
                                             </Transition>
                                         </>
                                     )}
@@ -182,7 +182,7 @@ export default function Example() {
                                         <Link to="/changelog" className="text-base font-medium text-gray-900 hover:text-gray-700" title={"Changelog"}>
                                             Changelog
                                         </Link>
-                                        {resources.map((item) => (
+                                        {/* {resources.map((item) => (
                                             <a
                                                 key={item.name}
                                                 href={item.href}
@@ -190,7 +190,7 @@ export default function Example() {
                                             >
                                                 {item.name}
                                             </a>
-                                        ))}
+                                        ))} */}
                                     </div>
                                     <div>
                                         <a
