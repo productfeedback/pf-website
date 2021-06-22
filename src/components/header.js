@@ -3,42 +3,43 @@ import { Link } from "gatsby"
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-    BookmarkAltIcon,
-    CalendarIcon,
+    // BookmarkAltIcon,
+    // CalendarIcon,
     MenuIcon,
-    ShieldCheckIcon,
-    SupportIcon,
+    // ShieldCheckIcon,
+    // SupportIcon,
     XIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
 
 import logo from "../../src/images/logo_header.svg"
 
-const resources = [
-    {
-        name: 'Help Center',
-        description: 'Get all of your questions answered in our forums or contact support.',
-        href: '#',
-        icon: SupportIcon,
-    },
-    {
-        name: 'Guides',
-        description: 'Learn how to maximize our platform to get the most out of it.',
-        href: '#',
-        icon: BookmarkAltIcon,
-    },
-    {
-        name: 'Events',
-        description: 'See what meet-ups and other events we might be planning near you.',
-        href: '#',
-        icon: CalendarIcon,
-    },
-    { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
+// import { ChevronDownIcon } from '@heroicons/react/solid'
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+// const resources = [
+//     {
+//         name: 'Help Center',
+//         description: 'Get all of your questions answered in our forums or contact support.',
+//         href: '#',
+//         icon: SupportIcon,
+//     },
+//     {
+//         name: 'Guides',
+//         description: 'Learn how to maximize our platform to get the most out of it.',
+//         href: '#',
+//         icon: BookmarkAltIcon,
+//     },
+//     {
+//         name: 'Events',
+//         description: 'See what meet-ups and other events we might be planning near you.',
+//         href: '#',
+//         icon: CalendarIcon,
+//     },
+//     { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+// ]
+
+// function classNames(...classes) {
+//     return classes.filter(Boolean).join(' ')
+// }
 
 export default function Example() {
     return (
@@ -58,7 +59,7 @@ export default function Example() {
                                 </a>
                             </div>
                             <div className="-mr-2 -my-2 md:hidden">
-                                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                     <span className="sr-only">Open menu</span>
                                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                                 </Popover.Button>
@@ -77,7 +78,7 @@ export default function Example() {
                                             {/* <Popover.Button
                                                 className={classNames(
                                                     open ? 'text-gray-900' : 'text-gray-500',
-                                                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                                                    'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
                                                 )}
                                             >
                                                 <span>Ressources</span>
@@ -112,7 +113,7 @@ export default function Example() {
                                                                     href={item.href}
                                                                     className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                                                                 >
-                                                                    <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                                                    <item.icon className="flex-shrink-0 h-6 w-6 text-blue-600" aria-hidden="true" />
                                                                     <div className="ml-4">
                                                                         <p className="text-base font-medium text-gray-900">{item.name}</p>
                                                                         <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -132,8 +133,8 @@ export default function Example() {
                                     Sign in
                                 </a>
                                 <a
-                                    href="#"
-                                    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-indigo-700"
+                                    href="https://app.productfeedback.com/signup"
+                                    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                                 >
                                     Sign up
                                 </a>
@@ -167,7 +168,7 @@ export default function Example() {
                                             />
                                         </div>
                                         <div className="-mr-2">
-                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                                 <span className="sr-only">Close menu</span>
                                                 <XIcon className="h-6 w-6" aria-hidden="true" />
                                             </Popover.Button>
@@ -194,14 +195,14 @@ export default function Example() {
                                     </div>
                                     <div>
                                         <a
-                                            href="#"
-                                            className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                                            href="https://app.productfeedback.com/signup"
+                                            className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                                         >
                                             Sign up
                                         </a>
                                         <p className="mt-6 text-center text-base font-medium text-gray-500">
                                             Existing customer?{' '}
-                                            <a href="https://app.productfeedback.com" className="text-indigo-600 hover:text-indigo-500">
+                                            <a href="https://app.productfeedback.com" className="text-blue-600 hover:text-blue-500">
                                                 Sign in
                                             </a>
                                         </p>
