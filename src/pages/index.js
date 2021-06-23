@@ -48,30 +48,38 @@ export default function Example() {
                         </h2>
                         <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-                            </div>
-                            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-                            </div>
-                            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img
+                                <StaticImage
                                     className="h-12"
-                                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                                    alt="StaticKit"
+                                    src="../images/logos/amalia.svg"
+                                    alt="Logo Amalia"
+                                />
+                            </div>
+                            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                                <StaticImage
+                                    className="h-12"
+                                    src="../images/logos/amalia.svg"
+                                    alt="Logo Amalia"
+                                />
+                            </div>
+                            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                                <StaticImage
+                                    className="h-12"
+                                    src="../images/logos/amalia.svg"
+                                    alt="Logo Amalia"
                                 />
                             </div>
                             <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                                <img
+                                <StaticImage
                                     className="h-12"
-                                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                                    alt="Transistor"
+                                    src="../images/logos/amalia.svg"
+                                    alt="Logo Amalia"
                                 />
                             </div>
                             <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                                <img
+                                <StaticImage
                                     className="h-12"
-                                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                                    alt="Workcation"
+                                    src="../images/logos/amalia.svg"
+                                    alt="Logo Amalia"
                                 />
                             </div>
                         </div>
@@ -83,16 +91,14 @@ export default function Example() {
 
                     <div className="relative">
                         <h2 className="text-center text-6xl font-extrabold text-gray-900 tracking-tight">
-                            Finally, a powerful research tool that is being loved by anyone in the company ♥️
+                            Finally, a powerful research tool that anyone in the company will love ♥️
                         </h2>
                     </div>
 
                     <FeatureSection
                         headline="interview guides"
-                        title="Create interview guides"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        title="Start every interview on the same page"
+                        descr="Create step by step guides before starting your user interviews."
                         left
                     >
                         <StaticImage
@@ -151,10 +157,8 @@ export default function Example() {
                     </FeatureSection>
                     <FeatureSection
                         headline="compare interviews"
-                        title="Compare interviews and extract insights faster"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        title="From messy notes to reusable insights"
+                        descr="Compare all your interview responses at once, sort highlighted verbatims, and extract key insights faster."
                         left
                     >
                         <StaticImage
@@ -168,9 +172,7 @@ export default function Example() {
                     <FeatureSection
                         headline="import quantitative data"
                         title="Quantitative and qualitative research now live together"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        descr="Import and analyze your Product surveys, NPS surveys, UX surveys, and more."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -183,18 +185,62 @@ export default function Example() {
 
                     <div className="bg-blue-700 mt-32 rounded-2xl">
                         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 ">
-                            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+                            <h2 className="text-3xl md:text-5xl font-bold text-white sm:text-4xl">
                                 <span className="block">Built for Atomic Research</span>
                             </h2>
-                            <p className="mt-4 text-lg leading-6 text-blue-200">
-                                Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
-                            </p>
-                            <a
-                                href="#"
-                                className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
-                            >
-                                Sign up for free
-                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-16 md:mt-24 bg-gray-200 md:rounded-3xl">
+                        <h2 class="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
+                        <p class="pb-6 text-gray-500 text-lg md:text-2xl text-center leading-normal md:leading-normal">We play nicely with other tools in your research workflow.</p>
+
+                        <div class="pt-6 sm:pt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 sm:gap-y-6">
+                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                                <StaticImage
+                                    className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
+                                    src="../images/logos/typeform.png"
+                                    width={80}
+                                    height={80}
+                                    alt="Logo Typeform"
+                                />
+                                <div>
+                                    <h3 class="pb-1 md:pb-2 text-gray-800 font-semibold text-lg md:text-xl leading-6">Typeform</h3>
+                                    <p class="text-gray-500 md:text-lg">Import surveys, analyze responses and categorize them.</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                                <StaticImage
+                                    className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
+                                    src="../images/logos/zapier.png"
+                                    width={80}
+                                    height={80}
+                                    alt="Logo Zapier"
+                                />
+                                <div>
+                                    <h3 class="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
+                                        Zapier
+                                        <div class="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
+                                    </h3>
+                                    <p class="text-gray-400 md:text-lg">Import surveys and customer feedback from 3,000+ apps.</p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                                <StaticImage
+                                    className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
+                                    src="../images/logos/zoom.jpeg"
+                                    width={80}
+                                    height={80}
+                                    alt="Logo Zoom"
+                                />
+                                <div>
+                                    <h3 class="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
+                                        Zoom
+                                        <div class="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
+                                    </h3>
+                                    <p class="text-gray-400 md:text-lg">Import Zoom video recordings in a single click.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
