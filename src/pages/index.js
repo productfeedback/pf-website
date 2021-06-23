@@ -9,40 +9,34 @@ export default function Example() {
             <div className="">
                 <div className="relative overflow-hidden">
 
-                    <div className="relative pt-6 pb-16 sm:pb-24">
+                    <div className="relative pt-6 pb-20">
 
-                        <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
+                        <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-32 sm:px-6">
                             <div className="text-center">
                                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                                     <span className="block">All your Customer Research</span>
                                     <span className="block text-blue-600">in A Single Place.</span>
                                 </h1>
-                                <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                                <p className="mt-3 max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                                     Streamline your customer research with our collaborative interface.
                                 </p>
-                                <p className="max-w-md mx-auto text-base text-gray-500 sm:text-lg md:text-xl md:max-w-3xl">
+                                <p className="max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:text-xl md:max-w-3xl">
                                     No more missing sheets, non-connected airtables, lost interview notes & video recordings - we bring it all into one space.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="relative">
-                        <div className="absolute inset-0 flex flex-col" aria-hidden="true">
-                            <div className="flex-1" />
-                            <div className="flex-1 w-full bg-blue-800" />
-                        </div>
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                            <img
-                                className="relative rounded-lg shadow-lg"
-                                src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg"
-                                alt="App screenshot"
-                            />
-                        </div>
+                    <div className="relative text-center">
+                        <StaticImage
+                            className="relative mx-auto max-w-4xl h-auto"
+                            src="../images/hero.jpg"
+                            alt="Product Feedback illustration"
+                        />
                     </div>
                 </div>
-                <div className="bg-blue-800">
-                    <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+                <div className="bg-blue-700">
+                    <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                         <h2 className="text-center text-white text-sm font-semibold uppercase tracking-wide">
                             Trusted by great customer-centric companies
                         </h2>
@@ -86,7 +80,7 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-            <div className="py-16 bg-gray-50 overflow-hidden lg:py-24">
+            <div className="py-16 bg-white overflow-hidden lg:py-32">
                 <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 
                     <div className="relative">
@@ -98,7 +92,7 @@ export default function Example() {
                     <FeatureSection
                         headline="interview guides"
                         title="Start every interview on the same page"
-                        descr="Create step by step guides before starting your user interviews."
+                        descr="Create advanced interview guides before starting your user interviews."
                         left
                     >
                         <StaticImage
@@ -112,9 +106,7 @@ export default function Example() {
                     <FeatureSection
                         headline="take notes together"
                         title="Make note taking a team sport"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        descr="Write user interview notes all together."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -127,9 +119,7 @@ export default function Example() {
                     <FeatureSection
                         headline="upload recordings"
                         title="Keep your videos recordings in the loop"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        descr="Attach your video recording to every interview note."
                         left
                     >
                         <StaticImage
@@ -143,9 +133,7 @@ export default function Example() {
                     <FeatureSection
                         headline="tag notes"
                         title="Tag content and save key moments"
-                        descr="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-                                officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-                                Totam, velit."
+                        descr="Highlight important parts of your interview and easily analyze insights at scale."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -172,7 +160,7 @@ export default function Example() {
                     <FeatureSection
                         headline="import quantitative data"
                         title="Quantitative and qualitative research now live together"
-                        descr="Import and analyze your Product surveys, NPS surveys, UX surveys, and more."
+                        descr="You can import all type of quantitive data in your research projects: UX surveys, NPS surveys, Product surveys, and more."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -185,13 +173,29 @@ export default function Example() {
 
                     <div className="bg-blue-700 mt-32 rounded-2xl">
                         <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 ">
-                            <h2 className="text-3xl md:text-5xl font-bold text-white sm:text-4xl">
-                                <span className="block">Built for Atomic Research</span>
+                            <h2 className="text-white">
+                                <span className="block text-lg md:text-xl">Build your customer knowledge repository with</span>
+                                <span className="block text-3xl md:text-5xl font-bold">Atomic UX Research</span>
                             </h2>
                         </div>
                     </div>
 
-                    <div class="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-16 md:mt-24 bg-gray-200 md:rounded-3xl">
+                    <FeatureSection
+                        headline="explore repository"
+                        title="Use past insights to answer today's questions"
+                        descr="Store all your research learnings so everyone can easily find them later when they work on new issues."
+                        left
+                    >
+                        <StaticImage
+                            className="relative mx-auto rounded-lg shadow-lg border-grey border"
+                            width={600}
+                            placeholder="blurred"
+                            src="../images/home-search.png"
+                            alt=""
+                        />
+                    </FeatureSection>
+
+                    <div class="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-16 md:mt-24 bg-gray-100 md:rounded-3xl">
                         <h2 class="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
                         <p class="pb-6 text-gray-500 text-lg md:text-2xl text-center leading-normal md:leading-normal">We play nicely with other tools in your research workflow.</p>
 
@@ -243,8 +247,24 @@ export default function Example() {
                             </div>
                         </div>
                     </div>
-
-
+                </div>
+            </div>
+            <div className="bg-indigo-50">
+                <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+                        <span className="block">Ready to dive in?</span>
+                        <span className="block text-blue-600">Start your free trial today.</span>
+                    </h2>
+                    <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                        <div className="inline-flex rounded-md shadow">
+                            <a
+                                href="https://app.productfeedback.com/signup"
+                                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                            >
+                                Get Started Free
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>

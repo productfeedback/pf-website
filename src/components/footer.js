@@ -70,7 +70,7 @@ export default function Example() {
                             <h3 className="text-base font-semibold text-gray-800 tracking-wider">
                                 Sign up for updates and tips
                             </h3>
-                            <p className="mt-4 text-base text-gray-500">
+                            <p className="mt-4 text-base font-light text-gray-800">
                                 Subscribe and receive regular updates on our changelog and user research best practices
                             </p>
                             <form className="mt-4 sm:flex sm:max-w-md">
