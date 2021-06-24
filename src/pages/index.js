@@ -27,15 +27,15 @@ export default function Example() {
                         </div>
                     </div>
 
-                    <div className="relative text-center">
+                    <div className="relative text-center bg-gradient-to-t from-blue-200 pt-12">
                         <StaticImage
-                            className="relative mx-auto max-w-4xl h-auto"
-                            src="../images/hero.jpg"
-                            alt="Product Feedback illustration"
+                            className="relative mx-auto max-w-4xl h-auto border-r border-l border-t rounded-t-2xl shadow-xl"
+                            src="../images/home-hero.jpg"
+                            alt="Product Feedback"
                         />
                     </div>
                 </div>
-                <div className="bg-blue-700">
+                {/* <div className="bg-blue-700">
                     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                         <h2 className="text-center text-white text-sm font-semibold uppercase tracking-wide">
                             Trusted by great customer-centric companies
@@ -78,21 +78,21 @@ export default function Example() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="py-16 bg-white overflow-hidden lg:py-32">
                 <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 
                     <div className="relative">
                         <h2 className="text-center text-6xl font-extrabold text-gray-900 tracking-tight">
-                            Finally, a powerful research tool that anyone in the company will love ♥️
+                            Finally, a powerful research tool that anyone in the company will love &hearts;
                         </h2>
                     </div>
 
                     <FeatureSection
                         headline="interview guides"
                         title="Start every interview on the same page"
-                        descr="Create advanced interview guides before starting your user interviews."
+                        descr="Create detailed set-by-step guides before starting any batch of user interviews."
                         left
                     >
                         <StaticImage
@@ -100,26 +100,28 @@ export default function Example() {
                             width={600}
                             placeholder="blurred"
                             src="../images/home-guide.png"
-                            alt=""
+                            alt="Create user interview guides"
                         />
                     </FeatureSection>
                     <FeatureSection
                         headline="take notes together"
                         title="Make note taking a team sport"
-                        descr="Write user interview notes all together."
+                        descr="Take live user interview notes all together with all the participants."
+                        beta
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
                             width={600}
                             placeholder="blurred"
                             src="../images/home-note.png"
-                            alt=""
+                            alt="Take notes together in Product Feedback"
                         />
                     </FeatureSection>
                     <FeatureSection
                         headline="upload recordings"
                         title="Keep your videos recordings in the loop"
-                        descr="Attach your video recording to every interview note."
+                        descr="Never loose any video recording anymore, there're now linked with your interview notes."
+                        beta
                         left
                     >
                         <StaticImage
@@ -127,20 +129,20 @@ export default function Example() {
                             width={600}
                             placeholder="blurred"
                             src="../images/home-video.png"
-                            alt=""
+                            alt="Upload video recordings in Product Feedback"
                         />
                     </FeatureSection>
                     <FeatureSection
                         headline="tag notes"
-                        title="Tag content and save key moments"
-                        descr="Highlight important parts of your interview and easily analyze insights at scale."
+                        title="Save key moments"
+                        descr="Highlight important parts of your interviews, comparing your interviews will then be a child's play!"
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
                             width={600}
                             placeholder="blurred"
                             src="../images/home-tag.png"
-                            alt=""
+                            alt="Tag note content in Product Feedback"
                         />
                     </FeatureSection>
                     <FeatureSection
@@ -154,36 +156,78 @@ export default function Example() {
                             width={600}
                             placeholder="blurred"
                             src="../images/home-analysis.png"
-                            alt=""
+                            alt="compare user interviews in Product Feedback"
                         />
                     </FeatureSection>
+
+                    <div className="relative">
+                        <h2 className="text-center text-6xl font-extrabold text-gray-900 tracking-tight mt-18 sm:mt-16 lg:mt-32">
+                            Quantitative and qualitative research now live together!
+                        </h2>
+                    </div>
+
                     <FeatureSection
-                        headline="import quantitative data"
-                        title="Quantitative and qualitative research now live together"
-                        descr="You can import all type of quantitive data in your research projects: UX surveys, NPS surveys, Product surveys, and more."
+                        headline="import surveys"
+                        title="One single place for all your customer feedback"
+                        descr="You can import all type of customer feedback in your research projects: UX surveys, NPS surveys, Product surveys and more."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
                             width={600}
                             placeholder="blurred"
                             src="../images/home-quantitative.png"
-                            alt=""
+                            alt="import quantitative data to Product Feedback"
                         />
                     </FeatureSection>
 
-                    <div className="bg-blue-700 mt-32 rounded-2xl">
-                        <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8 ">
-                            <h2 className="text-white">
+                    <FeatureSection
+                        headline="analyse at scale"
+                        title="Sort customer feedback at scale"
+                        descr="Identify trends in your customer feedback, archive them and build meaningful features faster."
+                        left
+                    >
+                        <StaticImage
+                            className="relative mx-auto rounded-lg shadow-lg border-grey border"
+                            width={600}
+                            placeholder="blurred"
+                            src="../images/home-survey.png"
+                            alt="import quantitative data to Product Feedback"
+                        />
+                    </FeatureSection>
+
+                    <FeatureSection
+                        headline="charts and statistics"
+                        title="Share what you've learned at scale"
+                        descr="Draw insights from imported quantitative data, MCQ survey responses or even charts created within Product Feedback."
+                    >
+                        <StaticImage
+                            className="relative mx-auto rounded-lg shadow-lg border-grey border"
+                            width={600}
+                            placeholder="blurred"
+                            src="../images/home-draw-quanti.png"
+                            alt="import quantitative data to Product Feedback"
+                        />
+                    </FeatureSection>
+
+                    <div className="bg-gray-100 mt-32 rounded-2xl py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                        <div className="max-w-2xl mx-auto text-center">
+                            <h2 className="text-gray-900">
                                 <span className="block text-lg md:text-xl">Build your customer knowledge repository with</span>
-                                <span className="block text-3xl md:text-5xl font-bold">Atomic UX Research</span>
+                                <span className="block text-6xl font-extrabold tracking-tight">Atomic UX Research</span>
                             </h2>
+                        </div>
+                        <div className="max-w-4xl mt-16 mx-auto text-center">
+                            <StaticImage
+                                src="../images/home-atomic.svg"
+                                placeholder="blurred"
+                            />
                         </div>
                     </div>
 
                     <FeatureSection
                         headline="explore repository"
                         title="Use past insights to answer today's questions"
-                        descr="Store all your research learnings so everyone can easily find them later when they work on new issues."
+                        descr="Store all your research learnings in a smart way so everyone can easily find them later when they work on new issues."
                         left
                     >
                         <StaticImage
@@ -191,16 +235,16 @@ export default function Example() {
                             width={600}
                             placeholder="blurred"
                             src="../images/home-search.png"
-                            alt=""
+                            alt="explore user research repository"
                         />
                     </FeatureSection>
 
-                    <div class="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-16 md:mt-24 bg-gray-100 md:rounded-3xl">
-                        <h2 class="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
-                        <p class="pb-6 text-gray-500 text-lg md:text-2xl text-center leading-normal md:leading-normal">We play nicely with other tools in your research workflow.</p>
+                    <div className="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-16 md:mt-24 bg-gray-100 md:rounded-3xl">
+                        <h2 className="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
+                        <p className="pb-6 text-gray-500 text-lg md:text-2xl text-center leading-normal md:leading-normal">We play nicely with other tools in your research workflow.</p>
 
-                        <div class="pt-6 sm:pt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 sm:gap-y-6">
-                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                        <div className="pt-6 sm:pt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 sm:gap-y-6">
+                            <div className="flex space-x-6 p-6 bg-white rounded-lg">
                                 <StaticImage
                                     className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
                                     src="../images/logos/typeform.png"
@@ -209,11 +253,11 @@ export default function Example() {
                                     alt="Logo Typeform"
                                 />
                                 <div>
-                                    <h3 class="pb-1 md:pb-2 text-gray-800 font-semibold text-lg md:text-xl leading-6">Typeform</h3>
-                                    <p class="text-gray-500 md:text-lg">Import surveys, analyze responses and categorize them.</p>
+                                    <h3 className="pb-1 md:pb-2 text-gray-800 font-semibold text-lg md:text-xl leading-6">Typeform</h3>
+                                    <p className="text-gray-500 md:text-lg">Import surveys, analyze responses and categorize them.</p>
                                 </div>
                             </div>
-                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                            <div className="flex space-x-6 p-6 bg-white rounded-lg">
                                 <StaticImage
                                     className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
                                     src="../images/logos/zapier.png"
@@ -222,14 +266,14 @@ export default function Example() {
                                     alt="Logo Zapier"
                                 />
                                 <div>
-                                    <h3 class="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
+                                    <h3 className="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
                                         Zapier
-                                        <div class="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
+                                        <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                     </h3>
-                                    <p class="text-gray-400 md:text-lg">Import surveys and customer feedback from 3,000+ apps.</p>
+                                    <p className="text-gray-400 md:text-lg">Import surveys and customer feedback from 3,000+ apps.</p>
                                 </div>
                             </div>
-                            <div class="flex space-x-6 p-6 bg-white rounded-lg">
+                            <div className="flex space-x-6 p-6 bg-white rounded-lg">
                                 <StaticImage
                                     className="flex-shrink-0 mb-6 w-10 h-10 rounded-lg"
                                     src="../images/logos/zoom.jpeg"
@@ -238,11 +282,11 @@ export default function Example() {
                                     alt="Logo Zoom"
                                 />
                                 <div>
-                                    <h3 class="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
+                                    <h3 className="flex items-center pb-1 md:pb-2 text-gray-500 font-semibold text-lg md:text-xl leading-6">
                                         Zoom
-                                        <div class="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
+                                        <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                     </h3>
-                                    <p class="text-gray-400 md:text-lg">Import Zoom video recordings in a single click.</p>
+                                    <p className="text-gray-400 md:text-lg">Import Zoom video recordings in a single click.</p>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +305,7 @@ export default function Example() {
                                 href="https://app.productfeedback.com/signup"
                                 className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
                             >
-                                Get Started Free
+                                Get Started
                             </a>
                         </div>
                     </div>

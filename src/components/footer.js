@@ -73,28 +73,32 @@ export default function Example() {
                             <p className="mt-4 text-base font-light text-gray-800">
                                 Subscribe and receive regular updates on our changelog and user research best practices
                             </p>
-                            <form className="mt-4 sm:flex sm:max-w-md">
-                                <label htmlFor="emailAddress" className="sr-only">
-                                    Email address
-                                </label>
-                                <input
-                                    type="email"
-                                    name="emailAddress"
-                                    id="emailAddress"
-                                    autoComplete="email"
-                                    required
-                                    className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-400"
-                                    placeholder="Enter your email"
-                                />
-                                <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-blue-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                                    >
-                                        Subscribe
-                                    </button>
-                                </div>
-                            </form>
+                            <div id="mc_embed_signup">
+                                <form className={"mt-4 sm:flex sm:max-w-md validate"} action="https://productfeedback.us7.list-manage.com/subscribe/post?u=bfd053de113053a80ae11dcea&amp;id=d246c6cae0" method="post" name="mc-embedded-subscribe-form" target="_blank" noValidate>
+                                    <div id="mce-responses" className={"clear"}>
+                                        <div className={"response"} id="mce-error-response" style={{ display: "none" }}></div>
+                                        <div className={"response"} id="mce-success-response" style={{ display: "none" }}></div>
+                                    </div>
+                                    {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+                                    <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
+                                        <input type="text" name="b_bfd053de113053a80ae11dcea_d246c6cae0" tabIndex="-1" />
+                                    </div>
+                                    <input
+                                        type="email"
+                                        name="EMAIL"
+                                        className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md sm:rounded-none sm:rounded-l-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:placeholder-gray-400"
+                                        placeholder="Your Work Email" />
+                                    <div className="mt-3 rounded-md sm:mt-0 sm:flex-shrink-0">
+                                        <button
+                                            type="submit"
+                                            name="subscribe"
+                                            className="w-full bg-blue-600 flex items-center justify-center border border-transparent rounded-md sm:rounded-none sm:rounded-r-md py-2 px-4 text-base font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                        >
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
 
 
