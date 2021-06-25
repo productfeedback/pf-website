@@ -106,7 +106,7 @@ export default function Example() {
                     <FeatureSection
                         headline="take notes together"
                         title="Make note-taking a team sport"
-                        descr="Take live user interview notes all together with all the participants."
+                        descr="Take timestamped interview notes in collaboration with your team mates."
                         beta
                     >
                         <StaticImage
@@ -120,7 +120,7 @@ export default function Example() {
                     <FeatureSection
                         headline="upload recordings"
                         title="Keep your videos recordings in the loop"
-                        descr="Never lose any video recording anymore, they're now linked to your interview notes."
+                        descr="Don't lose video recordings anymore, they're now linked to your interview notes."
                         beta
                         left
                     >
@@ -148,7 +148,7 @@ export default function Example() {
                     <FeatureSection
                         headline="compare interviews"
                         title="From messy notes to reusable insights"
-                        descr="Compare all your interview responses at once, sort highlighted verbatims, and extract key insights faster."
+                        descr="Compare all your interview notes at once, sort highlighted verbatims, and extract key insights faster."
                         left
                     >
                         <StaticImage
@@ -169,7 +169,7 @@ export default function Example() {
                     <FeatureSection
                         headline="import surveys"
                         title="One single place for all your customer feedback"
-                        descr="You can import all types of customer feedback in your research projects: UX surveys, NPS surveys, Product surveys, and more."
+                        descr="You can import all types of data in your research projects: UX surveys, NPS polls, Product surveys, and more."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -183,7 +183,7 @@ export default function Example() {
                     <FeatureSection
                         headline="analyse at scale"
                         title="Sort customer feedback at scale"
-                        descr="Identify trends in your customer feedback, archive them and build meaningful features faster."
+                        descr="Identify trends in survey responses, regroup them and build meaningful features faster."
                         left
                     >
                         <StaticImage
@@ -197,7 +197,7 @@ export default function Example() {
 
                     <FeatureSection
                         headline="charts and statistics"
-                        title="All your users's voice should count"
+                        title="Customer knowledge based on more voices"
                         descr="Draw insights from imported quantitative data, MCQ survey responses or even charts created within Product Feedback."
                     >
                         <StaticImage
@@ -270,7 +270,7 @@ export default function Example() {
                                         Zapier
                                         <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                     </h3>
-                                    <p className="text-gray-400 md:text-lg">Import survey responses and customer feedback from 3,000+ apps.</p>
+                                    <p className="text-gray-400 md:text-lg">Import any customer data from 3,000+ apps.</p>
                                 </div>
                             </div>
                             <div className="flex space-x-6 p-6 bg-white rounded-lg">
@@ -286,7 +286,7 @@ export default function Example() {
                                         Zoom
                                         <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                     </h3>
-                                    <p className="text-gray-400 md:text-lg">Import Zoom video recordings in a single click.</p>
+                                    <p className="text-gray-400 md:text-lg">Download your Zoom video recordings in a single click.</p>
                                 </div>
                             </div>
                         </div>
