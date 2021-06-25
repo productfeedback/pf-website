@@ -8,7 +8,7 @@ const FeatureSection = ({ headline, title, descr, img, left = false, beta = fals
         beta_html = <div className="ml-2 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Beta</div>;
     }
     return (
-        <div className="relative mt-18 sm:mt-16 lg:mt-32">
+        <div className="relative mt-16 sm:mt-16 lg:mt-32">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-32 lg:items-center">
                 <div className={ordering1}>
                     <span className="text-base text-blue-600 font-semibold tracking-wide uppercase flex items-center">
@@ -28,7 +28,6 @@ const FeatureSection = ({ headline, title, descr, img, left = false, beta = fals
             </div>
         </div>
     )
-    // }
 }
 
 export default FeatureSection
