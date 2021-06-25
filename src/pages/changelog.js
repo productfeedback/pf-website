@@ -10,10 +10,10 @@ export default function Changelog({ data }) {
       <div className="relative py-16 bg-white">
         {changelogs.map(changelog => (
 
-          <div className="relative px-4 sm:px-6 lg:px-8 mx-20 mt-10 mb-32">
+          <div className="relative px-6 lg:px-8 md:mx-20 mt-10 mb-32">
             <div className="text-lg max-w-prose mx-auto">
               <h1>
-                <span className="block text-base text-blue-600 font-semibold tracking-wide uppercase">
+                <span className="block text-sm md:text-base text-blue-600 font-semibold tracking-wide uppercase">
                   {changelog.frontmatter.date}
                 </span>
                 <span className="mt-2 block text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">

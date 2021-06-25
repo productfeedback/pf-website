@@ -57,7 +57,7 @@ function classNames(...classes) {
 export default function Example() {
     return (
         <Layout>
-            <div className="pt-40 max-w-7xl mx-auto py-24 px-4 bg-white sm:px-6 lg:px-8">
+            <div className="pt-40 max-w-7xl mx-auto py-24 px-6 bg-white sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl sm:leading-none sm:tracking-tight lg:text-6xl">
                     Start building great products faster
                 </h2>
