@@ -10,7 +10,7 @@ const Privacy = () => {
         <Layout>
             <>
                 {/* <SEO title="Privacy Policy" /> */}
-                <div className="relative bg-white prose max-w-7xl m-20 mx-auto px-4 sm:px-6">
+                <div className="relative bg-white prose max-w-7xl pt-32 mx-auto px-4 sm:px-6">
                     <h1>Privacy policy</h1>
                     <p>At Product Feedback, protecting your personal data is a priority!</p>
 

@@ -8,7 +8,7 @@ const Legal = () => {
         <Layout>
             <>
                 {/* <SEO title="Terms and Conditions" /> */}
-                <div className="relative bg-white prose max-w-7xl m-20 mx-auto px-4 sm:px-6">
+                <div className="relative bg-white prose max-w-7xl pt-32 mx-auto px-4 sm:px-6">
                     <h1><b>TERMS AND CONDITIONS &ndash; PRODUCT FEEDBACK</b></h1>
                     <p><span>Last updated </span><b>12/05/2021</b><span>.</span></p>
                     <p><span>&nbsp;</span></p>

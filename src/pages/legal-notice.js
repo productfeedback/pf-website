@@ -8,7 +8,7 @@ const Legal = () => {
         <Layout>
             <>
                 {/* <SEO title="Legal Notice" /> */}
-                <div className="relative bg-white prose max-w-7xl m-20 mx-auto px-4 sm:px-6">
+                <div className="relative bg-white prose max-w-7xl pt-32 mx-auto px-4 sm:px-6">
                     <h1>Legal Notice</h1>
                     <h3>Product Feedback SARL</h3>
                     <p>6 rue Dieudé</p>
