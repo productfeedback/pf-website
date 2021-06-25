@@ -17,7 +17,7 @@ const navigation = {
 export default function Example() {
     return (
         <div>
-            <footer className="bg-white" aria-labelledby="footerHeading">
+            <footer className="bg-white border-t-2 border-indigo-50" aria-labelledby="footerHeading">
                 <h2 id="footerHeading" className="sr-only">
                     Footer
                 </h2>
@@ -103,7 +103,7 @@ export default function Example() {
 
 
                     </div>
-                    <div className="py-8 border-t border-gray-200 md:flex md:items-center md:justify-between">
+                    <div className="py-8 border-t border-indigo-50 md:flex md:items-center md:justify-between">
                         <p className="text-center text-base text-gray-400">&copy; {new Date().getFullYear()}, Product Feedback. All
                             rights reserved.
                         </p>

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { CheckIcon } from '@heroicons/react/outline'
 
@@ -40,7 +41,7 @@ const pricing = {
             features: [
                 'Unlimited writer seats',
                 'VIP support from the founder',
-                'Proritized feature requests',
+                'Prioritized feature requests',
                 'Training sessions'
             ],
             cta: 'Schedule a demo',
@@ -61,7 +62,7 @@ export default function Example() {
                     Start building great products faster
                 </h2>
                 <p className="mt-6 max-w-2xl text-xl text-gray-500">
-                    We designed Product Feedback to help product teams to capitalize on user research and build meaningful products faster.
+                    Product Feedback will help your product team to capitalize on user research and build meaningful products faster.
                 </p>
 
                 {/* Tiers */}
@@ -85,7 +86,7 @@ export default function Example() {
                                 <p className="mt-6 text-gray-500">{tier.description}</p>
 
                                 {/* Feature list */}
-                                <ul role="list" className="mt-6 space-y-6">
+                                <ul className="mt-6 space-y-6">
                                     {tier.features.map((feature) => (
                                         <li key={feature} className="flex">
                                             <CheckIcon className="flex-shrink-0 w-6 h-6 text-blue-500" aria-hidden="true" />
@@ -95,8 +96,8 @@ export default function Example() {
                                 </ul>
                             </div>
 
-                            <a
-                                href="#"
+                            <Link
+                                to="/signup"
                                 className={classNames(
                                     tier.mostPopular
                                         ? 'bg-blue-500 text-white hover:bg-blue-600'
@@ -105,7 +106,8 @@ export default function Example() {
                                 )}
                             >
                                 {tier.cta}
-                            </a>
+
+                            </Link>
                         </div>
                     ))}
                 </div>
