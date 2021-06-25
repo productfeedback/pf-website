@@ -27,7 +27,7 @@ export default function Example() {
                         </div>
                     </div>
 
-                    <div className="relative text-center bg-gradient-to-t from-blue-200 pt-12">
+                    <div className="relative text-center bg-gradient-to-t from-yellow-200 pt-12">
                         <StaticImage
                             className="relative mx-auto max-w-4xl h-auto border-r border-l border-t rounded-t-2xl shadow-xl"
                             src="../images/home-hero.jpg"
@@ -92,7 +92,7 @@ export default function Example() {
                     <FeatureSection
                         headline="interview guides"
                         title="Start every interview on the same page"
-                        descr="Create detailed set-by-step guides before starting any batch of user interviews."
+                        descr="Create detailed step-by-step guides before starting any batch of user interviews."
                         left
                     >
                         <StaticImage
@@ -105,7 +105,7 @@ export default function Example() {
                     </FeatureSection>
                     <FeatureSection
                         headline="take notes together"
-                        title="Make note taking a team sport"
+                        title="Make note-taking a team sport"
                         descr="Take live user interview notes all together with all the participants."
                         beta
                     >
@@ -120,7 +120,7 @@ export default function Example() {
                     <FeatureSection
                         headline="upload recordings"
                         title="Keep your videos recordings in the loop"
-                        descr="Never loose any video recording anymore, there're now linked with your interview notes."
+                        descr="Never lose any video recording anymore, they're now linked to your interview notes."
                         beta
                         left
                     >
@@ -135,7 +135,7 @@ export default function Example() {
                     <FeatureSection
                         headline="tag notes"
                         title="Save key moments"
-                        descr="Highlight important parts of your interviews, comparing your interviews will then be a child's play!"
+                        descr="Highlight important parts of your interviews; comparing your interviews will then be a child's play!"
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -169,7 +169,7 @@ export default function Example() {
                     <FeatureSection
                         headline="import surveys"
                         title="One single place for all your customer feedback"
-                        descr="You can import all type of customer feedback in your research projects: UX surveys, NPS surveys, Product surveys and more."
+                        descr="You can import all types of customer feedback in your research projects: UX surveys, NPS surveys, Product surveys, and more."
                     >
                         <StaticImage
                             className="relative mx-auto rounded-lg shadow-lg border-grey border"
@@ -197,7 +197,7 @@ export default function Example() {
 
                     <FeatureSection
                         headline="charts and statistics"
-                        title="Share what you've learned at scale"
+                        title="All your users's voice should count"
                         descr="Draw insights from imported quantitative data, MCQ survey responses or even charts created within Product Feedback."
                     >
                         <StaticImage
@@ -227,7 +227,7 @@ export default function Example() {
                     <FeatureSection
                         headline="explore repository"
                         title="Use past insights to answer today's questions"
-                        descr="Store all your research learnings in a smart way so everyone can easily find them later when they work on new issues."
+                        descr="Smartly store all your research learnings, so it's easily accessible to anyone."
                         left
                     >
                         <StaticImage
@@ -254,7 +254,7 @@ export default function Example() {
                                 />
                                 <div>
                                     <h3 className="pb-1 md:pb-2 text-gray-800 font-semibold text-lg md:text-xl leading-6">Typeform</h3>
-                                    <p className="text-gray-500 md:text-lg">Import surveys, analyze responses and categorize them.</p>
+                                    <p className="text-gray-500 md:text-lg">Import surveys, analyze responses, and categorize them.</p>
                                 </div>
                             </div>
                             <div className="flex space-x-6 p-6 bg-white rounded-lg">
@@ -270,7 +270,7 @@ export default function Example() {
                                         Zapier
                                         <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                     </h3>
-                                    <p className="text-gray-400 md:text-lg">Import surveys and customer feedback from 3,000+ apps.</p>
+                                    <p className="text-gray-400 md:text-lg">Import survey responses and customer feedback from 3,000+ apps.</p>
                                 </div>
                             </div>
                             <div className="flex space-x-6 p-6 bg-white rounded-lg">
