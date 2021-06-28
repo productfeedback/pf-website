@@ -2,13 +2,13 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 // markup
 const NotFoundPage = () => {
   return (
     <>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <Layout>
         <main className="prose mx-auto max-w-7xl px-4 sm:px-6 pb-24">
           <title>Not found</title>

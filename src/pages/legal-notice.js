@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Legal = () => {
     return (
         <>
             <Layout>
-                <SEO title="Legal Notice" />
+                <Seo title="Legal Notice" />
                 <div className="relative bg-white prose max-w-7xl mx-auto px-4 sm:px-6 pb-24">
                     <h1>Legal Notice</h1>
                     <h3>Product Feedback SARL</h3>

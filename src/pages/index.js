@@ -2,13 +2,13 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import FeatureSection from "../components/feature-section"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Example() {
     return (
         <>
-            <SEO title="The product research repository for customer-centric teams." />
+            <Seo title="The product research repository for customer-centric teams." />
             <Layout>
                 <div className="relative overflow-hidden">
                     <div className="relative md:pb-20">

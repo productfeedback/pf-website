@@ -1,12 +1,12 @@
 import * as React from "react"
 import logo from "../../src/images/logo_header.svg"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 export default function Example() {
 
     return (
         <>
-            <SEO title="Signup to Product Feedback" />
+            <Seo title="Signup to Product Feedback" />
             <div className="bg-white py-24 px-6 lg:px-8">
                 <div className="relative max-w-xl mx-auto">
                     <div className="text-center">

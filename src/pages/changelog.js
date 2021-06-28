@@ -2,14 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 export default function Changelog({ data }) {
   const { changelogs } = data.changelog
 
   return (
     <>
-      <SEO title="Changelog" />
+      <Seo title="Changelog" />
       <Layout>
         <div className="relative bg-white">
           {changelogs.map((changelog) => (

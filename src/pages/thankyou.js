@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Calendly = () => {
     return (
@@ -14,7 +14,7 @@ export default function Example() {
 
     return (
         <>
-            <SEO title="Welcome" />
+            <Seo title="Welcome" />
             <Layout >
                 <div className="bg-white pb-24 px-6 lg:px-8">
                     <div className="relative max-w-xl mx-auto">

@@ -1,12 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Legal = () => {
     return (
         <>
-            <SEO title="Terms and conditions" />
+            <Seo title="Terms and conditions" />
             <Layout>
                 <>
                     {/* <SEO title="Terms and Conditions" /> */}
