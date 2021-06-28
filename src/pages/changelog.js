@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Seo from "../components/seo"
+import Img from "gatsby-image"
 
 export default function Changelog({ data }) {
   const { changelogs } = data.changelog
@@ -13,9 +14,8 @@ export default function Changelog({ data }) {
       <Layout>
         <div className="relative bg-white">
           {changelogs.map((changelog) => (
-
             <div className="relative px-6 lg:px-8 md:mx-20 mb-24 md:mb-32" key={changelog.id}>
-              <div className="text-lg max-w-prose mx-auto">
+              <div className="text-lg max-w-2xl mx-auto">
                 <h1>
                   <span className="block text-sm md:text-base text-blue-600 font-semibold tracking-wide uppercase">
                     {changelog.frontmatter.date}
@@ -24,13 +24,18 @@ export default function Changelog({ data }) {
                     {changelog.frontmatter.title}
                   </span>
                 </h1>
-                <div className="mt-8 mx-auto">
-                  <section
-                    className="prose"
-                    dangerouslySetInnerHTML={{ __html: changelog.html }}
-                    itemProp="articleBody"
+                {changelog.frontmatter.featuredImage &&
+                  <Img
+                    className="mt-8 rounded-lg"
+                    fluid={changelog.frontmatter.featuredImage.childImageSharp.fluid}
+                    alt={changelog.frontmatter.title}
                   />
-                </div>
+                }
+                <section
+                  className="prose max-w-2xl mt-8 mx-auto"
+                  dangerouslySetInnerHTML={{ __html: changelog.html }}
+                  itemProp="articleBody"
+                />
               </div>
             </div>
           ))}
@@ -43,11 +48,23 @@ export default function Changelog({ data }) {
 
 export const pageQuery = graphql`
   query MyQuery {
-    changelog: allMarkdownRemark {
+    changelog: allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___date]
+        order: DESC
+      }
+    ) {
       changelogs: nodes {
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          featuredImage {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         html
         id
