@@ -1,44 +1,40 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
+import Banner from "../components/banner"
 import FeatureSection from "../components/feature-section"
 import { StaticImage } from "gatsby-plugin-image"
 
 export default function Example() {
     return (
         <Layout>
-            <div className="">
-                <div className="relative overflow-hidden">
-
-                    <div className="relative pt-6 pb-20">
-
-                        <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-32 sm:px-6">
-                            <div className="text-center">
-                                <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                                    <span className="block">All your Customer Research</span>
-                                    <span className="block text-blue-600">in A Single Place.</span>
-                                </h1>
-                                <p className="mt-3 max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                                    Streamline your customer research with our collaborative interface.
-                                </p>
-                                <p className="max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:text-xl md:max-w-3xl">
-                                    No more missing sheets, non-connected airtables, lost interview notes & video recordings - we bring it all into one space.
-                                </p>
-                            </div>
+            <div className="relative overflow-hidden">
+                <div className="relative md:pb-20">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6">
+                        <div className="text-center">
+                            <h1 className="text-5xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                                <span className="block">All your Customer Research</span>
+                                <span className="block text-blue-600">in A Single Place.</span>
+                            </h1>
+                            <p className="mt-3 max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                                Streamline your customer research with our collaborative interface.
+                            </p>
+                            <p className="max-w-md mx-auto text-base font-light text-gray-500 sm:text-lg md:text-xl md:max-w-3xl">
+                                No more missing sheets, non-connected airtables, lost interview notes & video recordings - we bring it all into one space.
+                            </p>
                         </div>
                     </div>
+                </div>
 
-                    <div className="relative text-center bg-gradient-to-t from-yellow-200 pt-12">
-                        <StaticImage
-                            className="relative mx-auto max-w-4xl h-auto border-r border-l border-t rounded-t-2xl shadow-xl"
-                            src="../images/home-hero.jpg"
-                            alt="Product Feedback"
-                        />
-                    </div>
+                <div className="relative text-center bg-gradient-to-t from-yellow-200 pt-12 px-6 lg:px-0 h-40 md:h-auto -mt-4 md:mt-0">
+                    <StaticImage
+                        className="hidden md:block relative mx-auto max-w-4xl h-auto border-r border-l border-t rounded-t-2xl shadow-xl"
+                        src="../images/home-hero.jpg"
+                        alt="Product Feedback"
+                    />
                 </div>
             </div>
             <div className="py-16 bg-white overflow-hidden lg:py-32">
-                <div className="relative mx-auto px-8 sm:px-6 lg:px-8 md:max-w-2xl lg:max-w-7xl">
+                <div className="relative mx-auto px-6 lg:px-8 md:max-w-2xl lg:max-w-7xl">
 
                     <div className="relative">
                         <h2 className="text-center text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight">
@@ -166,19 +162,61 @@ export default function Example() {
                         />
                     </FeatureSection>
 
-                    <div className="bg-gray-100 mt-32 rounded-2xl py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                    <div className="bg-gray-100 mt-32 rounded-2xl pt-16 sm:pt-20 lg:py-16 p-6 lg:p-8">
                         <div className="max-w-2xl mx-auto text-center">
                             <h2 className="text-gray-900">
-                                <span className="block text-lg md:text-xl">Build your customer knowledge repository with</span>
+                                <span className="block text-gray-500 text-lg leading-normal md:leading-normal md:text-xl">Build your customer knowledge repository with</span>
                                 <span className="block text-4xl md:text-5xl font-extrabold tracking-tight">Atomic UX Research</span>
                             </h2>
                         </div>
-                        <div className="max-w-4xl mt-8 md:mt-16 mx-auto text-center">
+                        <div className="hidden lg:block max-w-4xl mt-8 md:mt-16 mx-auto text-center">
                             <StaticImage
                                 src="../images/home-atomic.svg"
                                 placeholder="blurred"
                                 alt="atomic research explained"
                             />
+                        </div>
+                        <div className="block lg:hidden mt-16">
+                            <div className="mx-auto mt-6 w-full text-center p-4 rounded-lg bg-green-200">
+                                <span className="block font-bold text-2xl text-green-800">Projects</span>
+                                <span className="block uppercase text-xs text-gray-600">What we did</span>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center">
+                                <svg className="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=chevrons-down">
+                                        <path id="Path 3" d="M7 13L12 18L17 13" stroke="#4E4E4E" strokeLinecap="round" />
+                                        <path id="Path 3_2" d="M7 7L12 12L17 7" stroke="#4E4E4E" strokeLinecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center p-4 rounded-lg bg-yellow-100">
+                                <span className="block font-bold text-2xl text-yellow-800">Facts</span>
+                                <span className="block uppercase text-xs text-gray-600">What users said</span>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center">
+                                <svg className="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=chevrons-down">
+                                        <path id="Path 3" d="M7 13L12 18L17 13" stroke="#4E4E4E" strokeLinecap="round" />
+                                        <path id="Path 3_2" d="M7 7L12 12L17 7" stroke="#4E4E4E" strokeLinecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center p-4 rounded-lg bg-red-100">
+                                <span className="block font-bold text-2xl text-red-800">Insights</span>
+                                <span className="block uppercase text-xs text-gray-600">What we think that meant</span>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center">
+                                <svg className="mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=chevrons-down">
+                                        <path id="Path 3" d="M7 13L12 18L17 13" stroke="#4E4E4E" strokeLinecap="round" />
+                                        <path id="Path 3_2" d="M7 7L12 12L17 7" stroke="#4E4E4E" strokeLinecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div className="mx-auto mt-2 w-full text-center p-4 rounded-lg bg-blue-100">
+                                <span className="block font-bold text-2xl text-blue-900">Recommendations</span>
+                                <span className="block uppercase text-xs text-gray-600">What we should do next</span>
+                            </div>
                         </div>
                     </div>
 
@@ -197,8 +235,8 @@ export default function Example() {
                         />
                     </FeatureSection>
 
-                    <div className="mx-auto max-w-screen-xl px-6 md:px-10 pt-16 pb-10 mt-24 bg-gray-100 md:rounded-3xl">
-                        <h2 className="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
+                    <div className="bg-gray-100 mt-32 rounded-2xl pt-16 sm:pt-20 lg:pt-20 p-6 lg:p-8">
+                        <h2 className="pb-4 text-4xl md:text-5xl font-bold text-gray-900 tracking-snug leading-10 md:leading-15 text-center">Integrate all your essential tools</h2>
                         <p className="pb-6 text-gray-500 text-lg md:text-2xl text-center leading-normal md:leading-normal">We play nicely with other tools in your research workflow.</p>
 
                         <div className="pt-6 sm:pt-12 grid lg:grid-cols-3 gap-x-6 gap-y-6 sm:gap-y-6">
@@ -251,22 +289,7 @@ export default function Example() {
                     </div>
                 </div>
             </div>
-            <div className="bg-indigo-50">
-                <div className="max-w-7xl mx-auto py-12 px-6 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
-                    <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
-                        <span className="block">Ready to dive in?</span>
-                        <span className="block text-blue-600">Start your free trial today.</span>
-                    </h2>
-                    <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                        <Link
-                            to="/signup"
-                            className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
-                        >
-                            Get Started
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            <Banner />
         </Layout>
     )
 }

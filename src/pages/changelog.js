@@ -1,16 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Banner from "../components/banner"
 
 export default function Changelog({ data }) {
   const { changelogs } = data.changelog
 
   return (
     <Layout>
-      <div className="relative py-16 bg-white">
-        {changelogs.map(changelog => (
+      <div className="relative bg-white">
+        {changelogs.map((changelog) => (
 
-          <div className="relative px-6 lg:px-8 md:mx-20 mt-10 mb-32">
+          <div className="relative px-6 lg:px-8 md:mx-20 mb-24 md:mb-32" key={changelog.id}>
             <div className="text-lg max-w-prose mx-auto">
               <h1>
                 <span className="block text-sm md:text-base text-blue-600 font-semibold tracking-wide uppercase">
@@ -31,6 +32,7 @@ export default function Changelog({ data }) {
           </div>
         ))}
       </div>
+      <Banner />
     </Layout>
   )
 }

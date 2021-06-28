@@ -14,6 +14,7 @@ module.exports = {
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
+      green: colors.green,
       blue: {
         '50': 'hsl(201, 100%, 85%)',
         '100': 'hsl(201, 100%, 80%)',
