@@ -1,25 +1,52 @@
 module.exports = {
   siteMetadata: {
     title: "Product Feedback",
+    description: `The product knowledge repository made for customer-centric companies. Run customer research, analyze quantitative data, extract insights, and make them accessible to the whole company.`,
+    author: `@qfrery`,
+    url: process.env.GATSBY_DOMAIN,
+    // image: "/images/main1.png",
   },
   plugins: [
     // "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-162346244-1",
       },
     },
-    "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/favicon.png",
+        name: `Product Feedback`,
+        short_name: `Product Feedback`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#00A5FF`,
+        display: `minimal-ui`,
+        icon: `${__dirname}/src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-favicons',
+    //   options: {
+    //     logo: `${__dirname}/src/images/favicon.png`,
+    //     appName: 'Product Feedback',
+    //     background: '#000000',
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: false,
+    //       favicons: true,
+    //       yandex: false,
+    //       windows: false
+    //     }
+    //   }
+    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
