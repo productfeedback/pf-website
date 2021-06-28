@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Calendly = () => {
     return (
@@ -12,20 +13,23 @@ const Calendly = () => {
 export default function Example() {
 
     return (
-        <Layout >
-            <div className="bg-white pb-24 px-6 lg:px-8">
-                <div className="relative max-w-xl mx-auto">
-                    <div className="text-center">
-                        <h1 className="mt-8 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Thanks for signing up <span role="img" aria-label="raised hands">🙌</span></h1>
-                        <p className="mt-4 text-lg leading-6 text-gray-500">
-                            Schedule a <span className="font-bold">personalized onboarding call</span> with the founder. We will create your account and show you how Product Feedback can help you build amazing products with your customers.
-                        </p>
-                    </div>
-                    <div className="mt-12">
-                        <Calendly />
+        <>
+            <SEO title="Welcome" />
+            <Layout >
+                <div className="bg-white pb-24 px-6 lg:px-8">
+                    <div className="relative max-w-xl mx-auto">
+                        <div className="text-center">
+                            <h1 className="mt-8 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Thanks for signing up <span role="img" aria-label="raised hands">🙌</span></h1>
+                            <p className="mt-4 text-lg leading-6 text-gray-500">
+                                Schedule a <span className="font-bold">personalized onboarding call</span> with the founder. We will create your account and show you how Product Feedback can help you build amazing products with your customers.
+                            </p>
+                        </div>
+                        <div className="mt-12">
+                            <Calendly />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </Layout >
+            </Layout >
+        </>
     )
 }

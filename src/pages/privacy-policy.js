@@ -1,14 +1,15 @@
 import React from "react"
 
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 const Privacy = () => {
     return (
-        <Layout>
-            <>
-                {/* <SEO title="Privacy Policy" /> */}
+        <>
+            <SEO title="Privacy Policy" />
+            <Layout>
+
                 <div className="relative bg-white prose max-w-7xl mx-auto px-4 sm:px-6">
                     <h1>Privacy policy</h1>
                     <p>At Product Feedback, protecting your personal data is a priority!</p>
@@ -90,8 +91,8 @@ const Privacy = () => {
                     <p>If you would like to contact us to understand more about this Policy or wish to contact us concerning any matter relating to individual rights and your Personal Information, you may send an email to <a href="mailto:hello@productfeedback.com">hello@productfeedback.com</a></p>
                     <p>This document was last updated on August 12, 2020</p>
                 </div>
-            </>
-        </Layout>
+            </Layout>
+        </>
     )
 }
 

@@ -16,7 +16,7 @@ module.exports = {
       yellow: colors.amber,
       green: colors.green,
       blue: {
-        '50': 'hsl(201, 100%, 85%)',
+        '50': 'hsl(201, 100%, 90%)',
         '100': 'hsl(201, 100%, 80%)',
         '200': 'hsl(201, 100%, 75%)',
         '300': 'hsl(201, 100%, 70%)',

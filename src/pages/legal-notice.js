@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 const Legal = () => {
     return (
-        <Layout>
-            <>
-                {/* <SEO title="Legal Notice" /> */}
+        <>
+            <Layout>
+                <SEO title="Legal Notice" />
                 <div className="relative bg-white prose max-w-7xl mx-auto px-4 sm:px-6 pb-24">
                     <h1>Legal Notice</h1>
                     <h3>Product Feedback SARL</h3>
@@ -33,8 +33,8 @@ const Legal = () => {
                     <p>We assume no liability for the content of websites linked to us.</p>
                     <p>The owners of these linked websites take sole responsibility for their contents.</p>
                 </div>
-            </>
-        </Layout>
+            </Layout>
+        </>
     )
 }
 
