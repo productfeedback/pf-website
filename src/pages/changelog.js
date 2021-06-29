@@ -26,7 +26,7 @@ export default function Changelog({ data }) {
                 </h1>
                 {changelog.frontmatter.featuredImage &&
                   <Img
-                    className="mt-8 rounded-lg"
+                    className="mt-8 rounded-lg border border-gray shadow-lg"
                     fluid={changelog.frontmatter.featuredImage.childImageSharp.fluid}
                     alt={changelog.frontmatter.title}
                   />
