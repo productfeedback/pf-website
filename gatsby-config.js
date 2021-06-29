@@ -30,23 +30,23 @@ module.exports = {
         icon: `${__dirname}/src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: `${__dirname}/src/images/logo_header.svg`,
-        appName: 'Product Feedback',
-        background: '#000000',
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-favicons',
+    //   options: {
+    //     logo: `${__dirname}/src/images/logo_header.svg`,
+    //     appName: 'Product Feedback',
+    //     background: '#000000',
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: false,
+    //       favicons: true,
+    //       yandex: false,
+    //       windows: false
+    //     }
+    //   }
+    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -81,7 +81,7 @@ module.exports = {
               maxWidth: 800,
             },
           },
-          // `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-responsive-iframe`,
           // {
           //   resolve: `gatsby-remark-responsive-iframe`,
           //   options: {
