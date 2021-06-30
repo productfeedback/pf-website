@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Seo from "../components/seo"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Changelog({ data }) {
   const { changelogs } = data.changelog
@@ -12,7 +12,7 @@ export default function Changelog({ data }) {
     <>
       <Seo title="Changelog" />
       <Layout>
-        <div className="relative bg-white">
+        <div className="changelog relative bg-white">
           {changelogs.map((changelog) => (
             <div className="relative px-6 lg:px-8 md:mx-20 mb-24 md:mb-32" key={changelog.id}>
               <div className="text-lg max-w-2xl mx-auto">
@@ -25,14 +25,14 @@ export default function Changelog({ data }) {
                   </span>
                 </h1>
                 {changelog.frontmatter.featuredImage &&
-                  <Img
+                  <GatsbyImage
                     className="mt-8 rounded-lg border border-gray shadow-lg"
-                    fluid={changelog.frontmatter.featuredImage.childImageSharp.fluid}
+                    image={changelog.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
                     alt={changelog.frontmatter.title}
                   />
                 }
                 <section
-                  className="prose max-w-2xl mt-8 mx-auto"
+                  className="prose prose-blue max-w-2xl mt-8 mx-auto"
                   dangerouslySetInnerHTML={{ __html: changelog.html }}
                   itemProp="articleBody"
                 />
@@ -60,9 +60,7 @@ export const pageQuery = graphql`
           title
           featuredImage {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData
             }
           }
         }

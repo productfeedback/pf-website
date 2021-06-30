@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.prose img {
+.changelog .prose img {
   border-radius: 0.5rem;
   border: 1px solid #dfdfdf;
 
