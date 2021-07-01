@@ -4,6 +4,15 @@ import Banner from "../components/banner"
 import FeatureSection from "../components/feature-section"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import {
+    LockClosedIcon,
+    ShieldCheckIcon,
+} from '@heroicons/react/outline'
+
+const features = [
+    { name: 'GDPR Certified', icon: LockClosedIcon, descr: 'With Product Feedback you meet all requirements of the General Data Protection Regulation (GDPR).' },
+    { name: 'Secure servers', icon: ShieldCheckIcon, descr: 'Our infrastructure is managed by AWS guaranteeing the most comprehensive security and compliance controls' },
+]
 
 export default function Example() {
     return (
@@ -286,6 +295,39 @@ export default function Example() {
                                             <div className="ml-3 px-2 py-1 leading-none text-xs font-semibold rounded-full bg-yellow-300 text-white">Soon</div>
                                         </h3>
                                         <p className="text-gray-400 md:text-lg">Download your Zoom video recordings in a single click.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="relative bg-white pt-16 sm:pt-24 lg:pt-32">
+                            <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+                                <h2 className="text-base font-semibold tracking-wider text-blue-600 uppercase">PRIVACY & SECURITY</h2>
+                                <p className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                                    Top-grade security
+                                </p>
+                                <p className="max-w-prose mx-auto mt-4 lg:mt-6 text-lg md:text-xl text-gray-500 font-light leading-6 md:leading-8">
+                                    We take your security seriously and take measures to ensure your data stays safe
+                                </p>
+                                <div className="mt-12">
+                                    <div className="mx-auto max-w-prose grid grid-cols-1 gap-8 sm:grid-cols-2">
+                                        {features.map((feature) => (
+                                            <div key={feature.name} className="pt-6">
+                                                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                                    <div className="-mt-6">
+                                                        <div>
+                                                            <span className="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                                                <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                                                            </span>
+                                                        </div>
+                                                        <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">{feature.name}</h3>
+                                                        <p className="mt-5 text-base text-gray-500">
+                                                            {feature.descr}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
