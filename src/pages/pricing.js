@@ -29,7 +29,7 @@ const pricing = {
                 '20 writer seats',
                 'VIP support from the founder',
                 'Proritized feature requests',
-                'Training sessions'
+                'Get help from the founder to get started'
             ],
             cta: 'Schedule a demo',
             mostPopular: true,
