@@ -56,7 +56,7 @@ export default function Example() {
 
                         <FeatureSection
                             headline="interview guides"
-                            title="Start every interview on the same page"
+                            title="Start every user interview on the same page"
                             descr="Create detailed step-by-step guides before starting any batch of user interviews."
                             left
                         >
