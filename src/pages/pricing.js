@@ -27,7 +27,7 @@ const pricing = {
             frequency: 'per writer/month',
             description: 'Become a customer-centric company',
             features: [
-                'Unlimited viewer seats',
+                '5+ writer seats (unlimited viewers)',
                 'Premium support',
                 'Get help to get started',
                 'Access to all integrations',
