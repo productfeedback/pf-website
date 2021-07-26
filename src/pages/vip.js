@@ -42,7 +42,7 @@ export default function Example() {
                         Welcome to our VIP program <span role="img" aria-label="raised hands">🙌</span>
                     </h2>
                     <p className="mt-6 max-w-2xl text-xl text-gray-500">
-                        Congratulations, you've been selected to be part of our VIP program! Because we think Product Feedback will benefit our product team a lot, we're offering you a VIP plan with <b>10 free writer seats</b>.
+                        Congratulations, you've been selected to be part of our VIP program! Because we think Product Feedback will benefit your product team a lot, we're offering you a VIP plan with <b>10 free writer seats</b>.
                     </p>
 
                     {/* Tiers */}
