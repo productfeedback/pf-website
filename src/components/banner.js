@@ -10,12 +10,12 @@ export default function Banner() {
                     <span className="block text-blue-600">Start your free trial today.</span>
                 </h2>
                 <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                    <Link
-                        to="/signup"
+                    <a
+                        href="https://app.productfeedback.com/signup"
                         className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                     >
                         Get Started Free
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

@@ -20,6 +20,7 @@ const pricing = {
             ],
             cta: 'Get Started',
             mostPopular: false,
+            demo: false,
         },
         {
             title: 'Growth',
@@ -33,8 +34,9 @@ const pricing = {
                 'Access to all integrations',
                 'Proritized feature requests',
             ],
-            cta: 'Schedule a demo',
+            cta: 'Get Started',
             mostPopular: true,
+            demo: false,
         },
         {
             title: 'Enterprise',
@@ -50,6 +52,7 @@ const pricing = {
             ],
             cta: 'Schedule a demo',
             mostPopular: false,
+            demo: true,
         },
     ],
 }
@@ -102,18 +105,34 @@ export default function Example() {
                                     </ul>
                                 </div>
 
-                                <Link
-                                    to="/signup"
-                                    className={classNames(
-                                        tier.mostPopular
-                                            ? 'bg-blue-500 text-white hover:bg-blue-600'
-                                            : 'bg-blue-50 text-blue-700 hover:bg-blue-100',
-                                        'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
-                                    )}
-                                >
-                                    {tier.cta}
+                                {tier.demo ? (
+                                    <Link
+                                        to="/demo"
+                                        className={classNames(
+                                            tier.mostPopular
+                                                ? 'bg-blue-500 text-white hover:bg-blue-600'
+                                                : 'bg-blue-50 text-blue-700 hover:bg-blue-100',
+                                            'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
+                                        )}
+                                    >
+                                        {tier.cta}
 
-                                </Link>
+                                    </Link>
+
+                                ) :
+                                    <a
+                                        href="https://app.productfeedback.com/signup"
+                                        className={classNames(
+                                            tier.mostPopular
+                                                ? 'bg-blue-500 text-white hover:bg-blue-600'
+                                                : 'bg-blue-50 text-blue-700 hover:bg-blue-100',
+                                            'mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium'
+                                        )}
+                                    >
+                                        {tier.cta}
+
+                                    </a>
+                                }
                             </div>
                         ))}
                     </div>

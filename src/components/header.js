@@ -132,12 +132,12 @@ export default function Example() {
                                 <a href="https://app.productfeedback.com" className="text-base font-medium text-gray-500 hover:text-gray-900">
                                     Sign In
                                 </a>
-                                <Link
-                                    to="/signup"
+                                <a
+                                    href="https://app.productfeedback.com/signup"
                                     className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                                 >
                                     Get Started Free
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -200,12 +200,12 @@ export default function Example() {
                                             </a>
                                         </p>
                                         <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                            <Link
-                                                to="/signup"
+                                            <a
+                                                href="https://app.productfeedback.com/signup"
                                                 className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                                             >
                                                 Get Started Free
-                                            </Link>
+                                            </a>
                                         </p>
                                     </div>
                                 </div>
