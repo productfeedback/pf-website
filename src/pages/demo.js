@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 const Calendly = () => {
     return (
         <div className="calendly-inline-widget w-full">
-            <iframe title="Book your onboarding call" src="https://calendly.com/qfrery/30min-onboarding?embed_type=Inline&amp;text_color=44464d&amp;primary_color=00a5ff" width="100%" height="1000px" frameBorder="0"></iframe>
+            <iframe title="Book your onboarding call" src="https://calendly.com/qfrery/30-minute-demo?embed_type=Inline&amp;text_color=44464d&amp;primary_color=00a5ff" width="100%" height="1000px" frameBorder="0"></iframe>
         </div >
     )
 }
